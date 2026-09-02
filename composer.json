@@ -1,0 +1,39 @@
+{
+    "name": "leeuwenkasteel/statistics",
+    "description": "Statistics for cashdesk and webshop",
+    "type": "library",
+    "license": "MIT",
+    "version" : "1.0",
+    "authors": [
+      {
+        "role": "Developer",
+        "name": "Sanne van Leeuwen",
+        "email": "sanne@leeuwenkasteel.nl",
+        "homepage": "https://www.leeuwenkasteel.nl/"
+      }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Leeuwenkasteel\\Statistics\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Leeuwenkasteel\\Statistics\\Tests\\": "tests/"
+      }
+    },
+    "require": {
+      "php": "^8.1",
+      "livewire/livewire": "^3.0",
+      "leeuwenkasteel/auth": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+	"extra": {
+        "laravel": {
+			"providers": [
+				"Leeuwenkasteel\\Statistics\\StatisticsPackageServiceProvider"
+			]
+		}
+	}
+  }
